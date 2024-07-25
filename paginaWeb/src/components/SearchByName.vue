@@ -1,7 +1,7 @@
 <template>
-  <div class="grid">
-    <div >
-      <form class="needs-validation" novalidate @submit.prevent="buscarClientes">
+  <div class="row g-3">
+    <div class="row g-3">
+      <form class="needs-validation row g-3" novalidate @submit.prevent="buscarClientes">
         <div >
           <div class="col-12">
             <label for="name" class="form-label">Nombre</label>

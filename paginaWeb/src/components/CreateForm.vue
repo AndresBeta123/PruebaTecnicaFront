@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2>Crear Cliente</h2>
-    <form @submit.prevent="crearCliente">
+    <form  class = "row g-3" @submit.prevent="crearCliente">
       <div class="row g-3">
         <div class="col-12">
           <label for="firstName" class="form-label">Primer Nombre</label>

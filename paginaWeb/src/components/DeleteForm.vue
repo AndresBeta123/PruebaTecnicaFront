@@ -1,9 +1,9 @@
 <template>
   <div>
     <h2>Eliminar Cliente</h2>
-    <form @submit.prevent="eliminarCliente">
-      <div class="row g-4">
-        <div class="col-12">
+    <form class="row g-3" @submit.prevent="eliminarCliente">
+      <div >
+        <div >
           <label for="userId" class="form-label">ID del Cliente</label>
           <input type="number" class="form-control" v-model="userId" placeholder="123" required>
         </div>
