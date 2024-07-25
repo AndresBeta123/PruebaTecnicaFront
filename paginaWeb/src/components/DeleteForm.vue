@@ -33,6 +33,7 @@ export default {
   },
   methods: {
     eliminarCliente() {
+      //json que se enviara al api rest
       const payload = {
         id: this.userId
       };

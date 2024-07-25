@@ -57,6 +57,7 @@ export default {
   },
   methods: {
     buscarClientes() {
+      //json que se enviara al api rest
       const params = {
         lookupName: this.lookupName
       };

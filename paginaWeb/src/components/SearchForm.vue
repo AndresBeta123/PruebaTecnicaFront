@@ -65,6 +65,7 @@
       };
     },
     computed: {
+      //se filtran los usuarios en this users para ser mostrados
       filteredUsers() {
         return this.users.filter(user => {
           return (

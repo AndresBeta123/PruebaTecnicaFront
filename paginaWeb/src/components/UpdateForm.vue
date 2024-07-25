@@ -47,6 +47,7 @@ export default {
     };
   },
   methods: {
+    //json que se enviara al api rest
     actualizarCliente() {
       const payload = {
         id: this.userId,
@@ -54,7 +55,7 @@ export default {
         last_name: this.lastName,
         city: this.city
       };
-
+      
       axios.patch('http://127.0.0.1:5000/update', payload)
         .then(response => {
           console.log('Cliente actualizado:', response.data);

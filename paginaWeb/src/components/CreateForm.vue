@@ -35,6 +35,7 @@ export default {
   methods: {
     crearCliente() {
       const payload = {
+        //json que se enviara al api rest
         name: {
           first: this.firstName,
           last: this.lastName
