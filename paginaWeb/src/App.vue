@@ -1,14 +1,14 @@
-<template>
+<template Class="center">
   <div>
-    <nav>
-      <button @click="currentView = 'search'">Buscar Todos</button>
-      <button @click="currentView = 'SearchByName'">Buscar Usuario </button>
-      <button @click="currentView = 'SearchByID'">Mostrar suario por id</button>
-      <button @click="currentView = 'Create'">Crear</button>
-      <button @click="currentView = 'update'">Actualizar</button>
-      <button @click="currentView = 'delete'">Eliminar</button>
-      
-      
+    <nav class="navbar navbar-light bg-light">
+      <form class="container-fluid justify-content-center">
+        <button class="btn btn-outline-success me-2 btn-sm" type="button" @click="currentView = 'search'">Buscar Todos</button>
+        <button class="btn btn-outline-success me-2 btn-sm" type="button" @click="currentView = 'SearchByName'">Buscar Usuario</button>
+        <button class="btn btn-outline-success me-2 btn-sm" type="button" @click="currentView = 'SearchByID'">Mostrar usuario por ID</button>
+        <button class="btn btn-outline-success me-2 btn-sm" type="button" @click="currentView = 'Create'">Crear</button>
+        <button class="btn btn-outline-success me-2 btn-sm" type="button" @click="currentView = 'update'">Actualizar</button>
+        <button class="btn btn-outline-success me-2 btn-sm" type="button" @click="currentView = 'delete'">Eliminar</button>
+      </form>
     </nav>
     <component :is="currentViewComponent"></component>
   </div>
@@ -53,10 +53,16 @@ export default {
 
 <style>
 nav {
-  display: flex;
-  gap: 10px;
   margin-bottom: 20px;
 }
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+  gap: 10px;
+}
+
 button {
   padding: 10px 20px;
   cursor: pointer;
